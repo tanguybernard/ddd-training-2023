@@ -1,4 +1,4 @@
-package com.zenika.training.bc_alerting.domain;
+package com.zenika.training.bc_alerting.domain.intervention;
 
 import com.zenika.training.shared.ValueObjectId;
 

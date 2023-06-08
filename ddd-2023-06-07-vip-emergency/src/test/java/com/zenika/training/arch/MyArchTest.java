@@ -6,7 +6,7 @@ import com.tngtech.archunit.lang.ArchRule;
 
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 
-@AnalyzeClasses(packages = "com.zenika.training.bc_test")
+@AnalyzeClasses(packages = "com.zenika.training.bc_alerting")
 public class MyArchTest {
 
     @ArchTest
