@@ -12,12 +12,7 @@ public class TrainingApplication {
                 SpringApplication.run(TrainingApplication.class, args);
 
 
-
     }
-
-//test 
-
-// Hello !
 
 
 }
