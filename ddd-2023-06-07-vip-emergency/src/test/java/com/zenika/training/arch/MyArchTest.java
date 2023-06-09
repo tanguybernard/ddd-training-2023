@@ -19,6 +19,6 @@ public class MyArchTest {
 
     @ArchTest
     public static final ArchRule class_domain_independant_presentation =noClasses().that().resideInAPackage("..domain..")
-            .should().dependOnClassesThat().resideInAPackage("..api..");
+            .should().dependOnClassesThat().resideInAPackage("..presentation..");
 
 }

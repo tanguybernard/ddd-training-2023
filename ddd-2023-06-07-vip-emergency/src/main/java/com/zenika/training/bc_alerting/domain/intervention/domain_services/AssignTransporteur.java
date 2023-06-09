@@ -17,7 +17,7 @@ public class AssignTransporteur {
 
     public void check(Intervention intervention, Transporteur transporteur) throws Exception {
 
-        Transporteur t = null;//repoIntervention.getIntenvtionActiveFor(transport)
+        Transporteur t = new Transporteur();//repoIntervention.getIntenvtionActiveFor(transport)
         intervention.assignTranspoteur(t);
 
     }

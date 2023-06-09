@@ -13,7 +13,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class CreateInterventionTest {
 
     @Test
-
     public void createIntervention() {
 
 

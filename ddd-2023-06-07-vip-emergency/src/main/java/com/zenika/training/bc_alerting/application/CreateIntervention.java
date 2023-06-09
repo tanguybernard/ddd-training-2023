@@ -13,7 +13,7 @@ public class CreateIntervention {
 
     private final InterventionRepository interventionRepository;
 
-    public CreateIntervention(InterventionRepository interventionRepository){
+    public CreateIntervention(InterventionRepository interventionRepository){//, Queue queue){
 
         this.interventionRepository = interventionRepository;
     }
@@ -25,8 +25,8 @@ public class CreateIntervention {
 
         try {
 
-            AssignTransporteur assignTransporteur = new AssignTransporteur(interventionRepository);
-            assignTransporteur.check(i,t);
+            //AssignTransporteur assignTransporteur = new AssignTransporteur(interventionRepository);
+            //assignTransporteur.check(i,t);
             this.interventionRepository.createIntervention(i);
 
         }
@@ -37,6 +37,8 @@ public class CreateIntervention {
             i.pullDomainEvents().forEach(DomainEventPublisher::dispatch);
         }
 
+
+        //queue.request(new IntergrationEvent());
 
         return i;
 
